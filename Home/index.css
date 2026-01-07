@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 17px;
+  margin: 10px;
+  padding: 10px;
+
+}
+
+:root {
+  --main-color: rgb(147, 76, 4);
+  --main-font: "Lora", serif;
+  --main-font-2: "Source Sans 3", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'menu'
+  'main'
+  'facts'
+  'footer';
+  background-color: white;
+  gap: 10px;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  font-family: "Lora", serif;
+  color: var(--main-color);
+   font-size: 40px;
+}
+
+.logo img{
+
+  width: 150px;
+  height: auto;
+  max-width: 100%;
+  margin-top:10px;
+}
+
+.logo {
+   
+    height:auto;
+    margin-left:20px;
+    padding: 0px 20px 0px 0px;
+    font-size:17px;
+}
+
+
+.logo{
+    margin-left:0px;
+    padding-left:50px;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  text-decoration: none;
+  font-size:15px;
+  display: none;
+  position: absolute;
+  background-color: #f8f8f8;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 12px;
+  list-style-type: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+ color: rgb(49, 49, 49);
+  padding: 15px 16px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #fdedfc;
+}
+
+#search {
+  margin-left: 460px;
+  margin-top: 8px;
+  padding: 5px;
+  width:200px;
+  font-size: 16px;
+  border: 1px solid var(--main-color);
+  border-radius:10px;
+}
+
+
+.HPC {
+  text-align: center;
+  font-family: "Lora", serif;
+  color: var(--main-color);
+   font-size: 25px;
+   margin-top: 20px;
+}
+.HPC p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: var(--main-font);
+
+}
+
+/* cake gallery in facts area */
+.gallery {
+  grid-area: facts;
+  background-color: beige;
+  padding: 60px;
+  margin: 90px;
+}
+
+p{
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--main-font);
+  color: var(--main-color);
+}
+
+div.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 80px solid beige;
+}
+
+div.gallery-item {
+  margin: 25px;
+  border: 1px solid burlywood;
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid var(--main-color);
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+    aspect-ratio: 2 / 3; /* Standard cake image ratio */
+  object-fit: cover;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+  color:var(--main-color);
+  font-family: var(--main-font-2);
+}
+
+#homebutton{
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+/*gallery items ends here*/
+/* Promo section starts here */
+.promo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.promo h1 {
+  text-align: center;
+  font-family: var(--main-font);
+  color: var(--main-color);
+ }
+
+ .promo p{
+  text-align: center;
+  font-family: var(--main-font-2);
+  color: var(--main-color);
+  font-size: 30px;
+ }
+/* Promo section ends here */
+
+
+
+/* Review section starts here, cake picture */
+#review-section{
+    margin-bottom: 40px;
+    background-color:rgb(244, 192, 140);
+}
+#review-section p{
+    color: var(--main-color);
+    font-family: var(--main-font);
+    font-size: 30px;
+    padding-top: 60px;
+}
+#review-section img{
+   margin: 25px;
+  border: 1px solid var(--main-color);
+  width: 700px;
+  height: auto;
+}
+
+#review-section img:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
+}
+#p3{
+    font-size: 30px;
+    font-family: var(--main-font-2);
+    background-color: beige;
+    color: var(--main-color);
+    margin: 20px;
+    padding: 50px;
+}
+
+#p5{
+  font-size:25px;
+}
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    font-size: 15px;
+}
+.flex-container> div {
+    display:block;
+    margin:20px;
+}
+
+.flex-container{
+  grid-area: footer;
+  text-align: center;
+}
+
+.flex-container p {
+  color: var(--main-color);
+  font-family: var(--main-font-2);
+  font-size: 18px;
+  padding: 20px;
+}
+
+.flex-container :hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+#reviews img {
+  width: 150px;
+  height: auto;
+}

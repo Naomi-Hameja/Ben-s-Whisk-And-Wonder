@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 17px;
+  margin: 10px;
+  padding: 10px;
+  
+
+}
+
+:root {
+  --main-color: rgb(147, 76, 4);
+  --main-font: "Lora", serif;
+  --main-font-2: "Source Sans 3", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  background-color: white;
+  gap: 10px;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  font-family: "Lora", serif;
+  color: var(--main-color);
+   font-size: 40px;
+}
+/*for dropdown menue on navigation*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 12px;
+  z-index: 1;
+  font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*ends here*/
+/*navigation menue*/
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+ color: rgb(49, 49, 49);
+  padding: 15px 16px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #fdedfc;
+}
+
+#search {
+  margin-left: 400px;
+  margin-top: 8px;
+  padding: 5px;
+  width:200px;
+  font-size: 16px;
+  border: 1px solid var(--main-color);
+  border-radius:10px;
+}
+/*ends here*/
+
+
+#contact-image {
+    width: 100%;    
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.image-container {
+  position: relative; 
+  display: inline-block; 
+}
+
+.image-container img {
+  width:1200px;
+  height: auto;
+  display: bloc
+}
+
+/*contact info area starts here*/
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    font-size: 15px;
+     grid-area: main;
+  text-align: center;
+  
+}
+.flex-container> div {
+    display:block;
+    margin:20px;
+}
+
+
+.flex-container p {
+  color: var(--main-color);
+  font-family: var(--main-font-2);
+  font-size: 18px;
+  padding: 20px;
+}
+
+.flex-container :hover{
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.flex-container img {
+  border: 3px solid beige;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  aspect-ratio: 2 / 3; 
+  object-fit: cover;
+}
+
+#p1{
+  grid-area: main;
+  padding: 10px 20px;
+  margin: 60px 10px;
+  background-color: #fff8f0;
+  font-size:40px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: var(--main-color);
+font-family: var(--main-font);
+}
+#p2{
+    font-size: 30px;
+}
+
+.form{
+    font-size: 20px;
+    color: var(--main-color);
+    background-color: beige;
+    padding: 30px 30px;
+    margin: 10px 10px;
+}
+
+ details {
+    width: 420px;
+  }
+
+  /* Make the summary look like a button */
+  summary {
+    display: inline-block;
+    padding: 10px 16px;
+    background: var(--main-color);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;   /* remove default arrow */
+    border: none;
+    user-select: none;
+  }
+
+  /* Remove the default marker in some browsers */
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* Changes button style when open */
+  details[open] summary {
+    background: #cda475;
+  }
+
+  /* this is for dropdown panel */
+  .panel {
+    margin-top: 12px;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f7f7f7;
+  }
+
+  label { 
+    display: block; 
+    margin-top: 10px; 
+    font-weight: bold; 
+}
+option{
+   border: 1px solid var(--main-color);
+}
+  input, textarea { 
+    width: 100%; 
+    padding: 6px; 
+    margin-top: 4px;
+    border:1px solid var(--main-color);
+ }
+
+ button [type=text]{
+padding:5px;
+margin:5px;
+color: var(--main-color)
+ }
