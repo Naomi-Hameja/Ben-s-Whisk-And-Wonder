@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="/Ben-s-Whisk-And-Wonder/Products/products.css">
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
 
     <title>Ben's Whisk & Wonder</title>
@@ -17,21 +17,36 @@
 
  <!--Navigation Area-->
 
+ 
+
+
 <div class="menu">
+
  <nav>
+  
+  <!-- Hamburger Button -->
+    
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
   <ul>
+    <div class="nav-lists">
   <li> <a href="/Home/index.html">Home</a></li>
 
 <div class="dropdown">
-
   <li> <a href="/Products/products.html">Products</a></li>
+
   <div class="dropdown-content">
-   <li> <a href="/Products/Birthdays/birthdays.html">Birthdays</a></li>
-    <li> <a href="/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
-    <li> <a href="/Products/Weddings/weddings.html">Weddings</a></li>
-    <li> <a href="/Products/Graduations/graduations.html">Graduations</a></li>
-    <li> <a href="/Products/Kids/kids.html">Kids</a></li>
-    <li> <a href="/Products/Other/other.html">Other</a></li>
+   <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Other</a></li>
   </div>
 
   </div>
@@ -55,12 +70,12 @@
 </div>
 
   <li> <a href="contact.html">Contact</a></li>
-
-   <li> <input type="text" id="search" name="search" placeholder="Search..."></li>
+</div>
+    <li> <input type="text" id="search" name="search" placeholder="Search..."></li>
 
   </ul>
+
  </nav>
-</div>
 </div>
 
 
@@ -217,11 +232,43 @@
 </div>
 
 
-<div class="footer">
-    <p>Ben's Whisk & Wonder © 2025</p>
-</div>
+<footer class="footer">
+  <div class="footer-container">
 
+    <!-- Logo -->
+    <div class="footer-section">
+      <img src="/Ben-s-Whisk-And-Wonder/BBWLogo1.png" alt="Ben's Whisk & Wonder Logo">
+      <br>
+      <h3>"Brining your dream delicacies to life"</h3><br>
+    </div>
+ 
+    <!-- Social Media Links -->
+    <div class="footer-section">
+    <h3>Follow our socials:</h3>
+      <ul class="socials">
+        <li><a href="#"><img src="/Ben-s-Whisk-And-Wonder/Instagram.png" alt="Instagram"></a></li>
+        <li><a href="#"><img src="/Ben-s-Whisk-And-Wonder/Twitter.png" alt="Twitter"></a></li>
+        <li><a href="#"><img src="/Ben-s-Whisk-And-Wonder/Facebook.png" alt="Facebook"></a></li>
+      </ul>    
+      </div>
 
+    <!-- Helpful Info -->
+    <div class="footer-section">
+      <h3>Helpful Information</h3>
+      <ul class="foot-list">
+        <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Cake Decor Tips</a></li>
+        <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Baking Tips</a></li>
+        <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">How to Pay</a></li>
+        <li><a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="copyright">
+    &copy; 2024 Ben's Whisk &amp; Wonder. All rights reserved.
+  </p>
+</footer>
 
 </body>
 </html>
