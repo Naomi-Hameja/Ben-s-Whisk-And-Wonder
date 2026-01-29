@@ -561,6 +561,13 @@ display: block;
 SMALL DEVICES (Phones – up to 579px) 
 ================================== */
 @media (max-width: 576px) {
+
+  .grid-container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  
   .header {
     justify-content: center;
     flex-direction: row;
@@ -611,7 +618,7 @@ SMALL DEVICES (Phones – up to 579px)
   }
 
   .facts p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .gallery {
