@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cupcake Making & Icing Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="support.css">
+</head>
+
+<body>
+  <div class="grid-container">
+
+    <div class="header">
+      <div class="logo">
+        <img src="/Ben-s-Whisk-And-Wonder/BBWLogo12.png" alt="Ben's Whisk & Wonder Logo" id="logoimg">
+        <h1>Ben's Whisk & Wonder</h1>
+      </div>
+    </div>
+
+    <!-- ====================
+    Top Navigation Menu
+    =========================== -->
+
+    <div class="menu">
+      <nav>
+
+        <!--===================
+        Hamburger menue
+        =======================-->
+
+        <button class="nav-button">
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/Ben-s-Whisk-And-Wonder/Home/index.html">Home</a>
+
+            <a href="#">Products</a>
+            <ul class="nav-options">
+              <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+              <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+              <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+              <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+              <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+              <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Other</a></li>
+            </ul>
+
+            <a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">About</a>
+
+            <a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Support</a>
+            <ul class="nav-options">
+              <li><a href="/Ben-s-Whisk-And-Wonder/Support/orders.html">Orders &Payment</a></li>
+            </ul>
+
+            <a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a>
+          </div>
+
+          <!-- Use any element to open the sidenav -->
+          <span onclick="openNav()">&#9776;</span>
+        </button>
+
+        <!--=======================
+        HAMBURGER ENDS HERE
+        ==========================-->
+
+        <div class="list">
+          <ul>
+            <li><a href="/Ben-s-Whisk-And-Wonder/Home/index.html">Home</a></li>
+
+            <div class="dropdown">
+              <li><a href="/Ben-s-Whisk-And-Wonder/Products/">Products</a></li>
+              <div class="dropdown-content">
+                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Other</a></li>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <li><a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">About</a></li>
+            </div>
+
+            <div class="dropdown">
+              <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Support</a></li>
+              <div class="dropdown-content">
+                <li><a href="/Ben-s-Whisk-And-Wonder/Support/orders.html">Payment</a></li>
+              </div>
+            </div>
+
+            <li><a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a></li>
+
+            <!--=========================
+            SEARCH BAR
+            =============================-->
+
+            <div class="dropdown">
+              <input
+                type="text"
+                id="mySearch"
+                onkeyup="myFunction()"
+                placeholder="Search.."
+                title="Type in a category"
+              >
+              <div class="dropdown-content">
+                <ul id="myMenu">
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthday</a></li>
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Wedding</a></li>
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Aniversary</a></li>
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduation</a></li>
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Fruit</a></li>
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Congradulationa</a></li>
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Farewell</a></li>
+                  <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Welcome</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+
+    <header class="page-header">
+      <h1>Making & Icing Cupcakes at Home</h1>
+      <p>Simple tips — and why professional cupcakes still make the difference</p>
+    </header>
+
+    <main class="content">
+
+      <section class="tips">
+        <h2>🍰 Baking the Perfect Cupcake</h2>
+        <p>
+          Making cupcakes at home can be a fun and rewarding experience.
+          Using fresh ingredients, measuring carefully, and not over-mixing
+          your batter are key steps to achieving a light and fluffy cupcake.
+        </p>
+        <p>
+          Baking times can vary depending on your oven, so always test with
+          a skewer before removing cupcakes from the oven.
+        </p>
+      </section>
+
+      <section class="tips">
+        <h2>🧁 Icing Like a Pro (Almost!)</h2>
+        <p>
+          Icing cupcakes neatly can be challenging. Consistency is crucial —
+          icing that is too soft will lose its shape, while icing that is too stiff
+          can be difficult to pipe.
+        </p>
+        <p>
+          Using piping bags and nozzles helps, but achieving a smooth,
+          professional finish takes time, patience, and lots of practice.
+        </p>
+      </section>
+
+      <section class="tips highlight">
+        <h2>✨ Why Choose Professionally Made Cupcakes?</h2>
+        <p>
+          While homemade cupcakes are great for casual occasions, professionally
+          made cupcakes offer consistent flavour, perfect texture, and a polished
+          appearance that’s ideal for parties, events, and celebrations.
+        </p>
+        <p>
+          Ben’s cupcakes are baked fresh to order and expertly decorated to give
+          your event that extra special touch.
+        </p>
+      </section>
+
+      <section class="cta">
+        <h2>Ready to Order?</h2>
+        <p>
+          If you’d like beautifully finished cakes without the stress,
+          explore our range and place an order today.
+        </p>
+        <a href="/Ben-s-Whisk-And-Wonder/Support/orders.html" class="order-btn">
+          View Prices & Order
+        </a>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="footer-logo">
+          <a href="/Ben-s-Whisk-And-Wonder/Home/index.html">
+            <img src="/Ben-s-Whisk-And-Wonder/BBwLogo1.png" alt="logo">
+          </a>
+          <p>"Bringing your dream delicacies to life"</p>
+        </div>
+
+        <div class="socials">
+          <p>Follow Our Socials:</p>
+          <ul>
+              <a href="https://www.instagram.com/principessa_noemi_?igsh=YWE4NDk3aHlpa2Fr"><li><img src="/Ben-s-Whisk-And-Wonder/Instagram.png"></li></a>
+              <a href="https://www.instagram.com/principessa_noemi_?igsh=YWE4NDk3aHlpa2Fr"><li><img src="/Ben-s-Whisk-And-Wonder/Twitter.png"></li></a>
+              <a href="https://www.facebook.com/share/1C7hAK2DSC/"><li><img src="/Ben-s-Whisk-And-Wonder/facebook.png"></li></a>
+          </ul>
+        </div>
+
+        <div class="info">
+          <p>Helpful Infromatiom</p>
+          <a href="/Ben-s-Whisk-And-Wonder/Support/support.html"><li>How To Decorate Cupcakes</li></a>
+          <a href="/Ben-s-Whisk-And-Wonder/Support/support.html"><li>Baking Tips</li></a>
+          <a href="/Ben-s-Whisk-And-Wonder/About Us/story.html"><li>About Us</li></a>
+          <a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html"><li>Contact us</li></a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span id="year">© 2026 Designed by Chipo Hameja</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!--=======================
+  SCRIPT
+  ===========================-->
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>

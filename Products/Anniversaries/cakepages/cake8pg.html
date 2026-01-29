@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Ben-s-Whisk-And-Wonder/Products/cakepg.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+
+    <title>Cake website</title>
+
+<body>
+
+<div class="grid-container">
+
+        <div class="header">
+            <div class="logo">
+                <img src="/Ben-s-Whisk-And-Wonder/BBWLogo12.png" alt="Ben's Whisk & Wonder Logo" id="logoimg">
+                <h1>Ben's Whisk & Wonder</h1>
+            </div>
+        </div>
+
+        <!-- ====================
+        Top Navigation Menu
+        =========================== -->
+
+        <div class="menu">
+            <nav>
+
+                <!--===================
+                Hamburger menue
+                =======================-->
+
+                <button class="nav-button">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="/Ben-s-Whisk-And-Wonder/Home/index.html">Home</a>
+
+                        <a href="#">Products</a>
+                        <ul class="nav-options">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Other</a></li>
+                        </ul>
+
+                        <a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">About</a>
+
+                        <a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Support</a>
+                        <ul class="nav-options">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Support/orders.html">Orders &Payment</a></li>
+                        </ul>
+
+                        <a href="#">Contact</a>
+                    </div>
+
+                    <!-- Use any element to open the sidenav -->
+                    <span onclick="openNav()">&#9776;</span>
+                </button>
+
+                 <!--=======================
+                 HAMBURGER ENDS HERE
+                 ==========================-->
+                <div class="list">
+                    <ul>
+                        <li><a href="/Ben-s-Whisk-And-Wonder/Home/index.html">Home</a></li>
+
+                        <div class="dropdown">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/">Products</a></li>
+
+                            <div class="dropdown-content">
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Other</a></li>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">About</a></li>
+                        </div>
+
+                        <div class="dropdown">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Support</a></li>
+                            <div class="dropdown-content">
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Support/orders.html">Payment</a></li>
+                            </div>
+                        </div>
+
+                        <li><a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a></li>
+                          
+                        <!--=========================
+                        SEARCH BAR
+                        =============================-->
+
+                        <div class="dropdown">
+                            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                            <div class="dropdown-content">
+                                <ul id="myMenu">
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthday</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Wedding</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Aniversary</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduation</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Fruit</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Congradulationa</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Farewell</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Welcome</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+<!-- Main Content -->
+<div class="main-content">
+
+  <div class="cake">
+    <img src="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cake8.jpeg"
+         alt="elegant simple birthday cake">
+  </div>
+
+  <!-- FORM -->
+  <form class="cake-form" id="cakeForm">
+
+    <p>Please select your cake options:</p>
+
+    <!-- Size -->
+    <div class="dropdown">
+      <label class="label">Cake Size ▾</label>
+
+      <div class="dropdown-content">
+        <label><input type="radio" name="size" value="6 inch"> 6 inch</label><br>
+        <label><input type="radio" name="size" value="8 inch"> 8 inch</label><br>
+        <label><input type="radio" name="size" value="10 inch"> 10 inch</label><br>
+        <label><input type="radio" name="size" value="Two-tier"> Two-tier</label><br>
+      </div>
+    </div>
+
+    <!-- Flavour -->
+    <div class="dropdown">
+      <label class="label">Cake Flavour ▾</label>
+
+      <div class="dropdown-content">
+        <label><input type="radio" name="flavour" value="Vanilla"> Vanilla</label><br><br>
+        <label><input type="radio" name="flavour" value="Chocolate"> Chocolate</label><br><br>
+        <label><input type="radio" name="flavour" value="Red Velvet"> Red Velvet</label><br><br>
+        <label><input type="radio" name="flavour" value="Lemon & Blueberry"> Lemon & Blueberry</label><br><br>
+        <label><input type="radio" name="flavour" value="Carrot"> Carrot</label><br><br>
+        <label><input type="radio" name="flavour" value="Strawberry"> Strawberry</label><br><br>
+        <label><input type="radio" name="flavour" value="Cookies & Cream"> Cookies & Cream</label><br><br>
+        <label><input type="radio" name="flavour" value="Coconut"> Coconut</label><br><br>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="text-field">
+      <label for="cake-message">Cake Message (optional)</label>
+      <textarea id="cake-message" maxlength="50"></textarea>
+    </div>
+
+    <!-- Extra Info -->
+    <div class="text-field">
+      <label for="extra-info">Extra Information</label>
+      <textarea id="extra-info"></textarea>
+    </div>
+
+    <input type="submit" value="Add to Cart" class="submit-btn">
+
+  </form>
+
+</div>
+
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer-logo">
+                    <a href="/Ben-s-Whisk-And-Wonder/Home/index.html">
+                        <img src="/Ben-s-Whisk-And-Wonder/BBwLogo1.png" alt="logo">
+                    </a>
+                    <p>"Bringing your dream delicacies to life"</p>
+                </div>
+
+                <div class="socials">
+                    <p>Follow Our Socials:</p>
+                     <ul>
+                     <a href="https://www.instagram.com/principessa_noemi_?igsh=YWE4NDk3aHlpa2Fr"><li><img src="/Ben-s-Whisk-And-Wonder/Instagram.png"></li></a>
+                     <a href="https://www.instagram.com/principessa_noemi_?igsh=YWE4NDk3aHlpa2Fr"><li><img src="/Ben-s-Whisk-And-Wonder/Twitter.png"></li></a>
+                     <a href="https://www.facebook.com/share/1C7hAK2DSC/"><li><img src="/Ben-s-Whisk-And-Wonder/facebook.png"></li></a>
+                    </ul>
+                </div>
+
+                <div class="info">
+                    <p>Helpful Infromatiom</p>
+                    <a href="/Ben-s-Whisk-And-Wonder/Support/support.html"><li>How To Decorate Cupcakes</li></a>
+                    <a href="/Ben-s-Whisk-And-Wonder/Support/support.html"><li>Baking Tips</li></a>
+                    <a href="/Ben-s-Whisk-And-Wonder/About Us/story.html"><li>About Us</li></a>
+                    <a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html"><li>Contact us</li></a>
+                </div>
+               
+               
+            </div>
+
+            <div class="footer-bottom">
+             <span id="year">© 2026 Designed by Chipo Hameja</span>
+              </div>
+        </footer>
+ <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+
+                    function myFunction() {
+                        var input, filter, ul, li, a, i;
+                        input = document.getElementById("mySearch");
+                        filter = input.value.toUpperCase();
+                        ul = document.getElementById("myMenu");
+                        li = ul.getElementsByTagName("li");
+                        for (i = 0; i < li.length; i++) {
+                            a = li[i].getElementsByTagName("a")[0];
+                            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                li[i].style.display = "";
+                            } else {
+                                li[i].style.display = "none";
+                            }
+                        }
+                    }
+                </script>
+
+</body>
+</html>

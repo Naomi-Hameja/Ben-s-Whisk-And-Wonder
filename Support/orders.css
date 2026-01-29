@@ -1,0 +1,685 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 17px;
+}
+
+:root {
+  --main-color: rgb(147, 76, 4);
+  --main-font: "Lora", serif;
+  --main-font-2: "Source Sans 3", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'menu'
+  'main'
+  'footer';
+  background-color: white;
+  max-width: 100%;
+  margin: auto;
+}
+
+
+.header {
+  grid-area: header;
+  text-align: center;
+  font-family: var(--main-font--);
+  color: var(--main-color);
+  font-size: 30px;
+  float: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  width: auto;
+  height: auto;
+  max-width: 18%;
+  display: grid;
+  float: inline-start;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+/* =====================
+   Hamburger menue
+===================== */
+
+.nav-button {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgb(80, 47, 6);
+  width: 50px;
+  background-color: var(--main-color);
+  color: white;
+  margin-left: 20px;
+  display: none;
+  justify-content: center;
+  text-align: center;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: rgb(170, 90, 40);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #61360c;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+ul.nav-options {
+  list-style-type: none;
+  padding-left: 0px;
+  flex-direction: column;
+}
+
+.nav-options li a {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--main-font-2);
+  font-size: 15px;
+  padding: 10px;
+}
+
+.nav-options li a:hover {
+  color: #61360c;
+}
+
+/* =================
+   Ends here
+=================== */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 12px;
+  z-index: 9999;
+  font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.list ul {
+  list-style-type: none;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.list ul li a {
+  display: block;
+  color: rgb(49, 49, 49);
+  padding: 15px 16px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.list ul li a:hover {
+  background-color: #fdedfc;
+}
+
+/* ===============
+   Search bar
+================== */
+
+.menu {
+  display: grid;
+  float: inline-start;
+}
+
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: var(--main-font--);
+
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  font-family: var(--main-font--);
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+
+.dropdown #myMenu li {
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.dropdown.dropdown-content #myMenu li a {
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px 12px;
+  z-index: 1;
+  font-size: 15px;
+}
+
+/* ========= ends here ========== */
+
+
+main {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: beige;
+  color: var(--main-color);
+}
+
+/* HEADER */
+.payment-header {
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+  padding: clamp(2rem, 6vw, 3.5rem) 1rem;
+  margin-top: 10px;
+}
+
+.payment-header h1 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+}
+
+/* MAIN LAYOUT */
+.payment-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ORDER SUMMARY */
+.order-summary {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.order-summary h2 {
+  color: var(--main-color);
+  margin-bottom: 1.2rem;
+}
+
+.order-item,
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.order-total {
+  border-top: 2px solid #eee;
+  padding-top: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* PAYMENT FORM */
+.payment-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.payment-section h2 {
+  color: var(--main-color);
+  margin-bottom: 1.2rem;
+}
+
+.payment-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.payment-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* =====================
+   FOOTER CONTAINER
+===================== */
+
+.footer{
+   background-color: rgb(187, 139, 76);
+}
+
+.container {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 3fr;
+ 
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  flex-direction: row;
+}
+
+/* FOOTER BOXES */
+.container > div {
+  background-color: rgb(187, 139, 76);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+/* =====================
+   LOGO
+===================== */
+
+.footer-logo img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* =====================
+   TEXT
+===================== */
+
+.container p {
+  font-family: var(--main-font-2);
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* =====================
+   SOCIAL ICONS
+===================== */
+
+.socials ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.socials li {
+  list-style: none;
+}
+
+.socials img {
+  max-width: 50px;
+  height: auto;
+  padding: 6px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.socials img:hover {
+  background-color: rgba(96, 41, 9, 0.5);
+  transform: scale(1.1);
+}
+
+/* =====================
+   INFO LINKS
+===================== */
+
+.info a {
+  display: inline-block;
+  margin: 0.3rem 0;
+  color: #ded8d8;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1.05rem;
+  font-family: var(--main-font-2);
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.info a:hover {
+  color: #602909;
+}
+
+
+/* =====================
+   COPYRIGHT
+===================== */
+
+.footer-bottom #year{
+text-align: center;
+display: block;
+}
+#year{
+  font-size:15px;
+  color:white;
+  text-align: center;
+}
+
+
+/* =================
+   Responsive
+===================== */
+
+/* =============================== 
+SMALL DEVICES (Phones – up to 579px) 
+================================== */
+@media (max-width: 576px) {
+  .header {
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  #logoimg {
+    max-width: 120px;
+    margin-bottom: 0.1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .list ul li {
+    display: none;
+  }
+
+  .nav-button {
+    display: block;
+    margin: 0px;
+  }
+
+  nav.nav-options {
+    flex-direction: column;
+  }
+
+  #mySearch {
+    width: 70%;
+  }
+
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .order-summary,
+  .payment-section {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .payment-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .payment-header p {
+    font-size: 0.95rem;
+  }
+
+  .container {
+    grid-template-columns: auto;
+    flex-direction: row;
+  }
+}
+
+/* =========================================
+   MEDIUM DEVICES (Tablets – 580px to 768px)
+========================================== */
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .grid-container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .list ul li {
+    display: none;
+  }
+
+  .nav-button {
+    display: block;
+     margin: 0px;
+  }
+
+  nav.nav-options {
+    flex-direction: column;
+  }
+
+  #mySearch {
+    width: 90%;
+  }
+
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+ 
+  .payment-section {
+    padding: 2rem;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+
+  button {
+    font-size: 1.05rem;
+  }
+
+  .footer-section img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+/*========================================
+LARGE DEVICES (Laptops – 769px to 1024px) 
+=========================================*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 2.9rem;
+  }
+
+  .payment-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    padding: 2.5rem;
+  }
+
+  .order-summary,
+  .payment-section {
+    padding: 2.5rem;
+  }
+
+  .payment-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3.5rem 2.5rem;
+  }
+
+  .footer-logo img {
+    max-width: 220px;
+  }
+
+  .container p {
+    font-size: 1.05rem;
+  }
+}
+
+/* ===================================
+EXTRA LARGE DEVICES (Desktops – 1025px+)
+====================================== */
+@media (min-width: 1025px) {
+  .grid-container {
+    max-width: auto;
+    margin: auto;
+  }
+
+  .payment-container {
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 3rem 2rem;
+  }
+
+  .order-summary,
+  .payment-section {
+    padding: 3rem;
+  }
+
+  .payment-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3.5rem 2.5rem;
+  }
+
+  .footer-logo img {
+    max-width: 220px;
+  }
+ .container p {
+    font-size: 1.05rem;
+  }
+}

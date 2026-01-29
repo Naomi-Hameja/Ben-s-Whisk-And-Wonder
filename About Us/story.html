@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="story.css">
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
 
@@ -12,68 +12,219 @@
 <body>
 
    <div class="grid-container">
+    
+        <div class="header">
+            <div class="logo">
+                <img src="/Ben-s-Whisk-And-Wonder/BBWLogo12.png" alt="Ben's Whisk & Wonder Logo" id="logoimg">
+                <h1>Ben's Whisk & Wonder</h1>
+            </div>
+        </div>
 
-<div class="header"><h1>Ben's Whisk & Wonder</h1></div>
 
- <!--Navigation Area-->
+        <!-- ====================
+        Top Navigation Menu
+        =========================== -->
+
+        <div class="menu">
+            <nav>
+
+                <!--===================
+                Hamburger menue
+                =======================-->
+
+                <button class="nav-button">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="/Ben-s-Whisk-And-Wonder/Home/index.html">Home</a>
+
+                        <a href="#">Products</a>
+                        <ul class="nav-options">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Other</a></li>
+                        </ul>
+
+                        <a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">About</a>
+
+                        <a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Support</a>
+
+                        <ul class="nav-options">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Support/orders.html">Orders &Payment</a></li>
+                        </ul>
+
+                        <a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a>
+                    </div>
+
+                    <!-- Use any element to open the sidenav -->
+                    <span onclick="openNav()">&#9776;</span>
+                </button>
+
+                 <!--=======================
+                 HAMBURGER ENDS HERE
+                 ==========================-->
+                <div class="list">
+                    <ul>
+                        <li><a href="/Ben-s-Whisk-And-Wonder/Home/index.html">Home</a></li>
+
+                        <div class="dropdown">
+                            <li><a href="">Products</a></li>
+
+                            <div class="dropdown-content">
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">other</a></li>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">About</a></li>
+                        </div>
+
+                        <div class="dropdown">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Support</a></li>
+                            <div class="dropdown-content">
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Support/orders.html">Payment</a></li>
+                            </div>
+                        </div>
+
+                        <li><a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a></li>
+                          
+                        <!--=========================
+                        SEARCH BAR
+                        =============================-->
+
+                        <div class="dropdown">
+                            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                            <div class="dropdown-content">
+                                <ul id="myMenu">
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthday</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Wedding</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/">Aniversary</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduation</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Fruit</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Congradulationa</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Farewell</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Welcome</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
 
 <div class="menu">
  <nav>
-  <ul>
-  <li> <a href="/Home/index.html">Home</a></li>
-
-<div class="dropdown">
-
-  <li> <a href="/Products/products.html">Products</a></li>
-  <div class="dropdown-content">
-   <li> <a href="/Products/Birthdays/birthdays.html">Birthdays</a></li>
-    <li> <a href="/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
-    <li> <a href="/Products/Weddings/weddings.html">Weddings</a></li>
-    <li> <a href="/Products/Graduations/graduations.html">Graduations</a></li>
-    <li> <a href="/Products/Kids/kids.html">Kids</a></li>
-    <li> <a href="/Products/Other/other.html">Other</a></li>
-  </div>
-
-  </div>
-  
-  <div class="dropdown">
-  <li> <a href="about.html">About</a></li>
-
-  <div class="dropdown-content">
-   <li> <a href="/About Us/story.html">Our Story</a></li>
-  </div>
-  </div>
-
- <div class="dropdown">
-  <li> <a href="support.html">Support</a></li>
-  <div class="dropdown-content">
-   <li> <a href="faq.html">FAQ</a></li>
-  </div>
-
-</div>
-
-  <li> <a href="contact.html">Contact</a></li>
-
-   <li> <input type="text" id="search" name="search" placeholder="Search..."></li>
-
-  </ul>
+ 
  </nav>
 </div>
 </div>
 
-<div class="content">
+<div class="main">
   <h1>Our Story</h1>
 <div class="flex-container">
-    <div><img src="/About Us/ourstory.jpeg
-        " alt="Benilda Anderson">
+    <div><img src="/Ben-s-Whisk-And-Wonder/About Us/ben adams.jpeg" alt="Ben Adams">
     </div>
-    <div><h1>Benilda Anderson</h1><br>
-        <p>Hi, I'm Benilda Anderson, founder of Ben's Whisk & Wonder. We are a delightful bakery specializing in custom cakes and pastries for all your special occasions. Our passion lies in creating beautiful, delicious treats that make every celebration memorable</p>
-    <p>Founded in 2010, Ben's Whisk & Wonder started as a small home-based bakery driven by my love for baking and creativity. What began as a hobby quickly grew into a thriving business, thanks to the support of our wonderful community and loyal customers. Over the years, we have expanded our offerings and honed our craft, always striving to deliver exceptional quality and service.</p></div>
+    <div><h1>Ben Adams</h1><br>
+        <p>Hi, I'm Ben Adams, founder of Ben's Whisk & Wonder. We are a delightful bakery specializing in custom cakes and pastries for all your special occasions. Our passion lies in creating beautiful, delicious treats that make every celebration memorable</p>
     </div>
+    </div>
+<div class="info">
+<p>Founded in 2010, Ben's Whisk & Wonder started as a small home-based bakery driven by my love for baking and creativity. What began as a hobby quickly grew into a thriving business, thanks to the support of our wonderful community and loyal customers. Over the years, we have expanded our offerings and honed our craft, always striving to deliver exceptional quality and service.</p>
+</div>
+<img src="/Ben-s-Whisk-And-Wonder/About Us/ben.jpeg" alt="Ben's Whisk & Wonder" id="cake">
 
-
+<div class="info">
 <p>At Ben's Whisk & Wonder, we believe that every cake tells a story. Whether you're celebrating a birthday, wedding, anniversary, or any other milestone, our skilled bakers and decorators work closely with you to bring your vision to life. From classic designs to whimsical creations, we cater to all tastes and preferences.</p>
 
 <p>We use only the finest ingredients to ensure that every bite is a perfect blend of flavor and texture. Our menu features a wide variety of cakes, cupcakes, cookies, and pastries, all made fresh daily. We also offer gluten-free and vegan options to accommodate diverse dietary needs.</p>
 <p>Visit us at Ben's Whisk & Wonder and let us help you make your next celebration truly special with our exquisite baked goods. Your sweet dreams are our command!</p>
+</div>
+
+</div>
+
+<footer>
+
+  
+<div class="container">
+  <div class="footer-logo">
+    <a href="/Ben-s-Whisk-And-Wonder/Home/index.html">
+    <img src="/Ben-s-Whisk-And-Wonder/BBwLogo1.png" alt="logo">
+    </a>
+     <p>"Bringing your dream delicacies to life"</p>
+  </div>
+
+
+  <div class="socials">
+    <p>Follow Our Socials:</p>
+    <ul> 
+      <a href="https://www.instagram.com/principessa_noemi_?igsh=YWE4NDk3aHlpa2Fr"><li><img src="/Ben-s-Whisk-And-Wonder/Instagram.png"></li></a>
+      <a href="https://www.instagram.com/principessa_noemi_?igsh=YWE4NDk3aHlpa2Fr"><li><img src="/Ben-s-Whisk-And-Wonder/Twitter.png"></li></a>
+      <a href="https://www.facebook.com/share/1C7hAK2DSC/"><li><img src="/Ben-s-Whisk-And-Wonder/facebook.png"></li></a>
+    </ul>
+    
+  </div>
+
+
+  <div class="info">
+<p>Helpful Infromatiom</p>
+ <a href="/Ben-s-Whisk-And-Wonder/Support/support.html">
+      <li>How To Decorate Cupcakes</li>
+      </a> <a href="/Ben-s-Whisk-And-Wonder/Support/support.html">
+      <li>Baking Tips</li>
+      </a> <a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">
+      <li>About Us</li>
+      </a> <a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">
+      <li>Contact us</li>
+      </a>
+
+  </div>  
+  <span id="year">© 2026 Designed by Chipo Hameja</span>
+</div>
+ 
+  </footer>
+  
+                <!--=======================
+                 SCRIPT
+                ===========================-->
+
+                <script>
+
+             // set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+
+                    function myFunction() {
+                        var input, filter, ul, li, a, i;
+                        input = document.getElementById("mySearch");
+                        filter = input.value.toUpperCase();
+                        ul = document.getElementById("myMenu");
+                        li = ul.getElementsByTagName("li");
+                        for (i = 0; i < li.length; i++) {
+                            a = li[i].getElementsByTagName("a")[0];
+                            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                li[i].style.display = "";
+                            } else {
+                                li[i].style.display = "none";
+                            }
+                        }
+                    }
+                </script>
+
+                </body>
+                </html>

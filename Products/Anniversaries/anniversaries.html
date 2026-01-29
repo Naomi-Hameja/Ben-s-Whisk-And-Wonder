@@ -3,272 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/Ben-s-Whisk-And-Wonder/Products/products.css">
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
-    <title>Ben's Whisk & Wonder</title>
+    <title>Cake website</title>
 </head>
+
 <body>
 
-   <div class="grid-container">
+    <div class="grid-container">
 
-<div class="header"><h1>Ben's Whisk & Wonder</h1></div>
+        <div class="header">
+            <div class="logo">
+                <img src="/Ben-s-Whisk-And-Wonder/BBWLogo12.png" alt="Ben's Whisk & Wonder Logo" id="logoimg">
+                <h1>Ben's Whisk & Wonder</h1>
+            </div>
+        </div>
 
- <!--Navigation Area-->
+        <!-- ===========================
+             TOP NAVIGATION MENU
+        ============================ -->
 
- 
+        <div class="menu">
+            <nav>
 
+                <!-- ===========================
+                     HAMBURGER MENU
+                ============================ -->
 
-<div class="menu">
+                <button class="nav-button">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="/Ben-s-Whisk-And-Wonder/Home/index.html">Home</a>
 
- <nav>
-  
-  <!-- Hamburger Button -->
-    
-  <input type="checkbox" id="menu-toggle">
-  <label for="menu-toggle" class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+                        <a href="#">Products</a>
+                        <ul class="nav-options">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/Other.html">Other</a></li>
+                        </ul>
 
-  <ul>
-    <div class="nav-lists">
-  <li> <a href="/Home/index.html">Home</a></li>
+                        <a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">About</a>
 
-<div class="dropdown">
-  <li> <a href="/Products/products.html">Products</a></li>
+                        <a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Support</a>
+                        <ul class="nav-options">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Support/orders.html">Orders &Payment</a></li>
+                        </ul>
 
-  <div class="dropdown-content">
-   <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
-    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
-    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
-    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
-    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
-    <li> <a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Other</a></li>
-  </div>
+                        <a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a>
+                    </div>
 
-  </div>
-  
-  <div class="dropdown">
-  <li> <a href="about.html">About</a></li>
+                    <span onclick="openNav()">&#9776;</span>
+                </button>
 
-  <div class="dropdown-content">
-   <li> <a href="/About Us/story.html">Our Story</a></li>
-    <li> <a href="careers.html">Careers</a></li>
-  </div>
-  </div>
+                <!-- ===========================
+                     DESKTOP NAVIGATION
+                ============================ -->
 
- <div class="dropdown">
-  <li> <a href="support.html">Support</a></li>
-  <div class="dropdown-content">
-   <li> <a href="faq.html">FAQ</a></li>
-   <li> <a href="paymentinfo.html">Shipping & Returns</a></li>
-  </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="/Ben-s-Whisk-And-Wonder/Home/index.html">Home</a></li>
 
-</div>
+                        <div class="dropdown">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Products/">Products</a></li>
+                            <div class="dropdown-content">
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthdays</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Anniversaries</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Weddings</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduations.html">Graduations</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Other</a></li>
+                            </div>
+                        </div>
 
-  <li> <a href="contact.html">Contact</a></li>
-</div>
-    <li> <input type="text" id="search" name="search" placeholder="Search..."></li>
+                        <div class="dropdown">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/About Us/story.html">About</a></li>
+                        </div>
 
-  </ul>
+                        <div class="dropdown">
+                            <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Support</a></li>
+                            <div class="dropdown-content">
+                                <li><a href="/Ben-s-Whisk-And-Wonder/Support/orders.html">Payment</a></li>
+                            </div>
+                        </div>
 
- </nav>
-</div>
+                        <li><a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a></li>
 
+                        <!-- ===========================
+                             SEARCH BAR
+                        ============================ -->
 
-<!-- Anniversaries Page Content -->
-<div class="facts">
+                        <div class="dropdown">
+                            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                            <div class="dropdown-content">
+                                <ul id="myMenu">
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Birthdays/birthdays.html">Birthday</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Weddings/weddings.html">Wedding</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/anniversaries.html">Aniversary</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Graduation/graduation.html">Graduation</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Kids/kids.html">Kids</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Fruit</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Congradulationa</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Farewell</a></li>
+                                    <li><a href="/Ben-s-Whisk-And-Wonder/Products/Other/other.html">Welcome</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
 
-  <div class="flex-container">
+            </nav>
+        </div>
 
-    <div><img src="cake17.jpeg"></div>
+        <!-- ===========================
+             ANNIVERSARIES PAGE CONTENT
+        ============================ -->
 
-    <div>
-   <h2>Anniversary Cakes</h2>
-    <p>Our anniversary cakes are designed to celebrate your special milestone with elegance and love. Each cake is a masterpiece, combining rich flavors with beautiful decorations to make your anniversary unforgettable.</p>
+        <div class="main">
+            <div class="flex-container">
+                <div>
+                    <img src="cake17.jpeg">
+                </div>
+                <div>
+                    <h2>Anniversary Cakes</h2>
+                    <p>
+                        Our anniversary cakes are designed to celebrate your special milestone with elegance and love.
+                        Each cake is a masterpiece, combining rich flavors with beautiful decorations to make your
+                        anniversary unforgettable.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake1pg.html">
+                        <img src="cake1.jpeg" alt="Order Now" id="cake1" width="1000" height="500">
+                    </a>
+                    <div class="desc">£50.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake2pg.html">
+                        <img src="cake2.jpeg" alt="Order Now" id="cake2" width="1000" height="500">
+                    </a>
+                    <div class="desc">£50.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake3pg.html">
+                        <img src="cake3.jpeg" alt="Order Now" id="cake3" width="1000" height="500">
+                    </a>
+                    <div class="desc">£60.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake4pg.html">
+                        <img src="cake4.jpeg" alt="Order Now" id="cake4" width="1000" height="500">
+                    </a>
+                    <div class="desc">£50.00</div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake5pg.html">
+                        <img src="cake5.jpeg" alt="Order Now" id="cake5" width="1000" height="500">
+                    </a>
+                    <div class="desc">£55.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake6pg.html">
+                        <img src="cake6.jpeg" alt="Order Now" id="cakes6" width="1000" height="500">
+                    </a>
+                    <div class="desc">£50.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake7pg.html">
+                        <img src="cake7.jpeg" alt="Order Now" id="cakes7" width="1000" height="500">
+                    </a>
+                    <div class="desc">£70.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake8pg.html">
+                        <img src="cake8.jpeg" alt="Order Now" id="cakes8" width="1000" height="500">
+                    </a>
+                    <div class="desc">£80.00</div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake9pg.html">
+                        <img src="cake9.jpeg" alt="Order Now" id="cake9" width="1000" height="500">
+                    </a>
+                    <div class="desc">£90.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake10pg.html">
+                        <img src="cake10.jpeg" alt="Order Now" id="cakes10" width="1000" height="500">
+                    </a>
+                    <div class="desc">£65.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake11pg.html">
+                        <img src="cake11.jpeg" alt="Order Now" id="cakes11" width="1000" height="500">
+                    </a>
+                    <div class="desc">£105.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake12pg.html">
+                        <img src="cake12.jpeg" alt="Order Now" id="cakes12" width="1000" height="500">
+                    </a>
+                    <div class="desc">£150.00</div>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake13pg.html">
+                        <img src="cake13.jpeg" alt="Order Now" id="cake13" width="1000" height="500">
+                    </a>
+                    <div class="desc">£160.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake14pg.html">
+                        <img src="cake14.jpeg" alt="Order Now" id="cake14" width="1000" height="500">
+                    </a>
+                    <div class="desc">£170.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake15pg.html">
+                        <img src="cake15.jpeg" alt="Order Now" id="cake15" width="1000" height="500">
+                    </a>
+                    <div class="desc">£170.00</div>
+                </div>
+
+                <div class="gallery-item">
+                    <a href="/Ben-s-Whisk-And-Wonder/Products/Anniversaries/cakepages/cake16pg.html">
+                        <img src="cake16.jpeg" alt="cake16" id="cake16" width="1000" height="500">
+                    </a>
+                    <div class="desc">£200</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ===========================
+             FOOTER
+        ============================ -->
+
+        <footer class="footer">
+            <div class="container">
+
+                <div class="footer-logo">
+                    <a href="/Ben-s-Whisk-And-Wonder/Home/index.html">
+                        <img src="/Ben-s-Whisk-And-Wonder/BBwLogo1.png" alt="logo">
+                    </a>
+                    <p>"Bringing your dream delicacies to life"</p>
+                </div>
+
+                <div class="socials">
+                    <p>Follow Our Socials:</p>
+                    <ul>
+                        <a href="https://www.instagram.com/principessa_noemi_?igsh=YWE4NDk3aHlpa2Fr"><li><img src="/Ben-s-Whisk-And-Wonder/Instagram.png"></li></a>
+                        <a href="https://www.instagram.com/principessa_noemi_?igsh=YWE4NDk3aHlpa2Fr"><li><img src="/Ben-s-Whisk-And-Wonder/Twitter.png"></li></a>
+                        <a href="https://www.facebook.com/share/1C7hAK2DSC/"><li><img src="/Ben-s-Whisk-And-Wonder/facebook.png"></li></a>
+                    </ul>
+                </div>
+
+                <div class="info">
+                    <p>Helpful Infromatiom</p>
+                    <a href="/Ben-s-Whisk-And-Wonder/Support/support.html"><li>How To Decorate Cupcakes</li></a>
+                    <a href="/Ben-s-Whisk-And-Wonder/Support/support.html"><li>Baking Tips</li></a>
+                    <a href="/Ben-s-Whisk-And-Wonder/About Us/story.html"><li>About Us</li></a>
+                    <a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html"><li>Contact us</li></a>
+                </div>
+
+               
+               
+            </div>
+            <div class="footer-bottom">
+             <span id="year">© 2026 Designed by Chipo Hameja</span>
+              </div>
+        </footer>
+          
     </div>
 
-  </div>
-  </div>  
-</div>
+    <!-- ===========================
+         SCRIPT
+    ============================ -->
 
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
 
-<div class="content">
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
 
-    <div class="gallery"> <!--gallery items-->
- 
-<div class="gallery-item">
-  <a target="_blank" href="/cakepages/cake1pg.html">
-    <img src="cake1.jpeg" alt="Order Now" id="cake1"  width="1000" height="500">
-  </a>
-  <div class="desc">£250.00</div>
-</div>
-
-<div class="gallery-item">
-  <a target="_blank" href="cakepages/cake2pg.html">
-    <img src="cake2.jpeg" alt="Order Now" id="cake2" width="1000" height="500">
-  </a>
-  <div class="desc">£230.00</div>
-</div>
-
-<div class="gallery-item">
-  <a target="_blank" href="cakepages/cake3pg.html">
-    <img src="cake3.jpeg" alt="Order Now" id="cake3" width="1000" height="500">
-  </a>
-  <div class="desc">£220.00</div>
-</div>
-
-<div class="gallery-item">
-  <a target="_blank" href="cakepages/cake4pg.html">
-    <img src="cake4.jpeg" alt="Order Now"  id="cake4" width="1000" height="500">
-  </a>
-  <div class="desc">£220.00</div>
-   </div>
-
-  </div>
-
-  <div class="gallery"> <!--gallery items-->
-
-
-<div class="gallery-item">
-  <a target="_blank" href="cakepages/cake5pg.html">
-    <img src="cake5.jpeg" alt="Order Now"  id="cake5" width="1000" height="500">
-  </a>
-  <div class="desc">£250.00</div>
-  </div>
-
-  <div class="gallery-item">
-  <a target="_blank" href="cakepages/cake6pg.html">
-    <img src="cake6.jpeg" alt="Order Now"  id="cakes6" width="1000" height="500">
-  </a>
-  <div class="desc">£220.00</div>
-  </div>
-
-
-  <div class="gallery-item">
-  <a target="_blank" href="cakepages/cake7pg.html">
-    <img src="cake7.jpeg" alt="Order Now"  id="cakes7" width="1000" height="500">
-  </a>
-  <div class="desc">£270.00</div>
-  </div>
-
-  <div class="gallery-item">
-  <a target="_blank" href="cakepages/cake8pg.html">
-    <img src="cake8.jpeg" alt="Order Now"  id="cakes8" width="1000" height="500">
-  </a>
-  <div class="desc">£300.00</div>
-</div>
-
-</div>
-
-<div class="gallery"> <!--gallery items-->
-
-
-<div class="gallery-item">
-  <a target="_blank" href="cakepages/cake9pg.html">
-    <img src="cake9.jpeg" alt="Order Now"  id="cake9" width="1000" height="500">
-  </a>
-  <div class="desc">£300.00</div>
-  </div>
-
-  <div class="gallery-item">
-  <a target="_blank" href="cakepages/cake10pg.html">
-    <img src="cake10.jpeg" alt="Order Now"  id="cakes10" width="1000" height="500">
-  </a>
-  <div class="desc">£360.00</div>
-  </div>
-
-
-  <div class="gallery-item">
-  <a target="_blank" href="cakepages/cake11pg.html">
-    <img src="cake11.jpeg" alt="Order Now"  id="cakes11" width="1000" height="500">
-  </a>
-  <div class="desc">£445.00</div>
-  </div>
-
-  <div class="gallery-item">
-  <a target="_blank" href="cakepages/cake12pg.html">
-    <img src="cake12.jpeg" alt="Order Now"  id="cakes12" width="1000" height="500">
-  </a>
-  <div class="desc">£480.00</div>
-</div>
-</div>
-
-<div class="gallery"> <!--gallery items-->
-
-
-<div class="gallery-item">
-  <a target="_blank" href="cakepages/cake13pg.html">
-    <img src="cake13.jpeg" alt="Order Now"  id="cake13" width="1000" height="500">
-  </a>
-  <div class="desc">£580.00</div>
-  </div>
-
-  <div class="gallery-item">
-  <a target="_blank" href="cakepages/cake14pg.html">
-    <img src="cake14.jpeg" alt="Order Now"  id="cake14" width="1000" height="500">
-  </a>
-  <div class="desc">£580.00</div>
-  </div>
-
-
-  <div class="gallery-item">
-  <a target="_blank" href="cakepages/cake15pg.html">
-    <img src="cake15.jpeg" alt="Order Now"  id="cake15" width="1000" height="500">
-  </a>
-  <div class="desc">£620.00</div>
-  </div>
-
-  <div class="gallery-item">
-  <a target="_blank" href="cake16.jpeg">
-    <img src="cake16.jpeg" alt="cake16"  id="cake16" width="1000" height="500">
-  </a>
-  <div class="desc">£750</div>
-</div>
-</div>
-</div>
-
-
-<footer class="footer">
-  <div class="footer-container">
-
-    <!-- Logo -->
-    <div class="footer-section">
-      <img src="/Ben-s-Whisk-And-Wonder/BBWLogo1.png" alt="Ben's Whisk & Wonder Logo">
-      <br>
-      <h3>"Brining your dream delicacies to life"</h3><br>
-    </div>
- 
-    <!-- Social Media Links -->
-    <div class="footer-section">
-    <h3>Follow our socials:</h3>
-      <ul class="socials">
-        <li><a href="#"><img src="/Ben-s-Whisk-And-Wonder/Instagram.png" alt="Instagram"></a></li>
-        <li><a href="#"><img src="/Ben-s-Whisk-And-Wonder/Twitter.png" alt="Twitter"></a></li>
-        <li><a href="#"><img src="/Ben-s-Whisk-And-Wonder/Facebook.png" alt="Facebook"></a></li>
-      </ul>    
-      </div>
-
-    <!-- Helpful Info -->
-    <div class="footer-section">
-      <h3>Helpful Information</h3>
-      <ul class="foot-list">
-        <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Cake Decor Tips</a></li>
-        <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">Baking Tips</a></li>
-        <li><a href="/Ben-s-Whisk-And-Wonder/Support/support.html">How to Pay</a></li>
-        <li><a href="/Ben-s-Whisk-And-Wonder/Contact us/contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <p class="copyright">
-    &copy; 2024 Ben's Whisk &amp; Wonder. All rights reserved.
-  </p>
-</footer>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 
 </body>
 </html>
