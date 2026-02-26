@@ -11,10 +11,12 @@ body {
 }
 
 /* VARIABLES */
+
 :root {
-  --main-color: rgb(147, 76, 4);
+  --main-color: rgba(86, 42, 15);
   --main-font: "Lora", serif;
   --main-font-2: "Source Sans 3", sans-serif;
+  --hover-colour: rgb(140, 121, 104);
 }
 
 /* GRID LAYOUT */
@@ -80,7 +82,7 @@ Hamburger menue
   z-index: 1; 
   top: 0;
   left: 0;
-  background-color: rgb(170, 90, 40);
+  background-color: var(--main-color);
   overflow-x: hidden; 
   padding-top: 60px; 
   transition: 0.5s; 
@@ -98,7 +100,7 @@ Hamburger menue
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #61360c;
+  color: var(--hover-colour);
 }
 
 /* Position and style the close button (top right corner) */
@@ -126,7 +128,7 @@ ul.nav-options{
 }
 
 .nav-options li a:hover{
-color:#61360c
+color:var(--hover-colour);
 }
 
 
@@ -260,7 +262,7 @@ float:inline-start;
   display: flex;
   align-items: center;
   gap: 50px;
-   background-color: beige;
+   background-color:whitesmoke;
 }
 
 /* IMAGE */
@@ -310,7 +312,7 @@ float:inline-start;
 }
 
 .info{
-  background-color: beige;
+  background-color: whitesmoke;
 }
 
 /* =====================
@@ -321,7 +323,7 @@ float:inline-start;
   display: grid;
  
   grid-template-columns: 3fr;
-  background-color:rgb(187, 139, 76);
+  background-color:var(--main-color);
   padding: 2.5rem 1.5rem;
   text-align: center;
   flex-direction: row;
@@ -329,7 +331,7 @@ float:inline-start;
 
 /* FOOTER BOXES */
 .container > div {
-  background-color: rgb(187, 139, 76);
+  background-color: var(--main-color);
   padding: 1.5rem;
   border-radius: 12px;
 
@@ -386,7 +388,7 @@ float:inline-start;
 }
 
 .socials img:hover {
-  background-color: rgba(96, 41, 9, 0.5);
+  background-color: var(--hover-colour);
   transform: scale(1.1);
 }
 
@@ -409,7 +411,7 @@ float:inline-start;
 }
 
 .info a:hover {
-  color: #602909;
+  color: var(--hover-colour);
 
 }
 
@@ -508,7 +510,7 @@ MEDIUM DEVICES (Tablets – 580px to 768px)
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 
   .list ul li{

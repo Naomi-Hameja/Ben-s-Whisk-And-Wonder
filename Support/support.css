@@ -6,11 +6,12 @@ body {
   font-family: "Source Sans 3", sans-serif;
   font-size: 17px;
 }
-
+ 
 :root {
-  --main-color: rgb(147, 76, 4);
+  --main-color: rgba(86, 42, 15);
   --main-font: "Lora", serif;
   --main-font-2: "Source Sans 3", sans-serif;
+  --hover-colour: rgb(140, 121, 104);
 }
 
 .grid-container {
@@ -76,7 +77,7 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(170, 90, 40);
+  background-color:var(--main-color);
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -94,7 +95,7 @@ nav {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #61360c;
+  color: var(--hover-colour);
 }
 
 /* Position and style the close button (top right corner) */
@@ -286,7 +287,7 @@ ul.nav-options {
 /* CALL TO ACTION */
 .cta {
   text-align: center;
-  background: #fff3ea;
+  background: whitesmoke;
   padding: 2.5rem 1rem;
   border-radius: 14px;
 }
@@ -315,7 +316,7 @@ ul.nav-options {
 ===================== */
 
 .footer{
-   background-color: rgb(187, 139, 76);
+   background-color: var(--main-color);
 }
 
 .container {
@@ -330,7 +331,7 @@ ul.nav-options {
 
 /* FOOTER BOXES */
 .container > div {
-  background-color: rgb(187, 139, 76);
+  background-color: var(--main-color);
   padding: 1.5rem;
   border-radius: 12px;
 }
@@ -388,7 +389,7 @@ ul.nav-options {
 }
 
 .socials img:hover {
-  background-color: rgba(96, 41, 9, 0.5);
+  background-color: var(--hover-colour);
   transform: scale(1.1);
 }
 
@@ -412,7 +413,7 @@ ul.nav-options {
 }
 
 .info a:hover {
-  color: #602909;
+  color: var(--hover-colour);
 }
 
 

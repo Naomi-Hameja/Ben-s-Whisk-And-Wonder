@@ -8,9 +8,10 @@ body {
 }
 
 :root {
-  --main-color: rgb(147, 76, 4);
+  --main-color: rgba(86, 42, 15);
   --main-font: "Lora", serif;
   --main-font-2: "Source Sans 3", sans-serif;
+  --hover-colour: rgb(140, 121, 104);
 }
 
 .grid-container {
@@ -29,57 +30,55 @@ body {
 .header {
   grid-area: header;
   text-align: center;
-  font-family: var(--main-font--);
+  font-family: "Lora", serif;
   color: var(--main-color);
-  font-size: 30px;
+   font-size: 30px;
   float: center;
   display: flex;
   flex-direction: row;
 }
 
-.logo img {
+.logo img{
   width: auto;
   height: auto;
   max-width: 18%;
-  display: grid;
-  float: inline-start;
+  display:grid;
+float:inline-start;
 }
 
-nav {
-  display: flex;
+ nav{
+  display:flex;
   flex-direction: row;
   gap: 50px;
 }
 
-/* =====================
-   Hamburger menue
-===================== */
+/*=====================
+Hamburger menue
+========================*/
 
-.nav-button {
+.nav-button{
   padding: 12px;
   border-radius: 5px;
   border: 1px solid rgb(80, 47, 6);
   width: 50px;
-  background-color: var(--main-color);
+  background-color:var(--main-color);
   color: white;
   margin-left: 20px;
-  display: none;
+  display:none;
   justify-content: center;
   text-align: center;
 }
-
-/* The side navigation menu */
 .sidenav {
-  height: 100%;
+  height: 100vh;
   width: 0;
   position: fixed;
-  z-index: 9999;
   top: 0;
   left: 0;
-  background-color: rgb(170, 90, 40);
+  background-color: var(--main-color);
   overflow-x: hidden;
+  transition: width 0.4s ease;
+  z-index: 9999;
   padding-top: 60px;
-  transition: 0.5s;
 }
 
 /* The navigation menu links */
@@ -94,41 +93,44 @@ nav {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #61360c;
+  color:var(--hover-colour);
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-  position: absolute;
+  position:absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
 
-ul.nav-options {
+ul.nav-options{
   list-style-type: none;
-  padding-left: 0px;
-  flex-direction: column;
-}
+ padding-left: 0px;
+ flex-direction: column;
 
-.nav-options li a {
-  list-style-type: none;
-  text-decoration: none;
+} 
+
+.nav-options li a{
+  list-style-type:none;
+  text-decoration:none;
   font-family: var(--main-font-2);
   font-size: 15px;
   padding: 10px;
 }
 
-.nav-options li a:hover {
-  color: #61360c;
+.nav-options li a:hover{
+color:var(--hover-colour)
 }
 
-/* =================
-   Ends here
-=================== */
 
-.dropdown {
+
+/*=================
+Ends here
+===================*/
+
+.dropdown  {
   position: relative;
   display: inline-block;
 }
@@ -138,9 +140,9 @@ ul.nav-options {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 10px 12px;
-  z-index: 9999;
+  z-index: 1;
   font-size: 15px;
 }
 
@@ -148,7 +150,7 @@ ul.nav-options {
   display: block;
 }
 
-.list ul {
+.list  ul{
   list-style-type: none;
   flex-direction: row;
   margin: 0;
@@ -157,16 +159,17 @@ ul.nav-options {
   display: flex;
 }
 
-.nav {
+.nav{
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
+
 }
 
 .list ul li a {
   display: block;
-  color: rgb(49, 49, 49);
+ color: rgb(49, 49, 49);
   padding: 15px 16px;
   margin-right: 10px;
   text-decoration: none;
@@ -176,13 +179,16 @@ ul.nav-options {
   background-color: #fdedfc;
 }
 
-/* ===============
-   Search bar
-================== */
 
+
+
+/* ===============
+Search bar
+================== */
 .menu {
-  display: grid;
-  float: inline-start;
+ display:grid;
+float:inline-start;
+
 }
 
 #mySearch {
@@ -193,7 +199,7 @@ ul.nav-options {
   border-radius: 10px;
   font-size: 16px;
   font-family: var(--main-font--);
-
+ 
 }
 
 /* Style the navigation menu inside the left column */
@@ -203,26 +209,30 @@ ul.nav-options {
   margin: 0;
   flex-direction: column;
   font-family: var(--main-font--);
+   
 }
 
 #myMenu li a {
   padding: 12px;
   text-decoration: none;
   color: black;
-  display: block;
+  display: block
 }
 
 #myMenu li a:hover {
   background-color: #eee;
+
+
 }
 
-.dropdown #myMenu li {
+.dropdown #myMenu li   {
   position: relative;
   display: inline-block;
   flex-direction: column;
+
 }
 
-.dropdown.dropdown-content #myMenu li a {
+.dropdown.dropdown-content #myMenu li a{
   display: flex;
   flex-direction: row;
 }
@@ -232,19 +242,20 @@ ul.nav-options {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 10px 12px;
   z-index: 1;
   font-size: 15px;
 }
 
-/* ========= ends here ========== */
+/*=========ends here==========*/
+
 
 
 main {
   margin: 0;
   font-family: var(--font-sans);
-  background: beige;
+  background: whitesmoke;
   color: var(--main-color);
 }
 
@@ -352,7 +363,7 @@ button:hover {
 ===================== */
 
 .footer{
-   background-color: rgb(187, 139, 76);
+   background-color: var(--main-color);
 }
 
 .container {
@@ -367,7 +378,7 @@ button:hover {
 
 /* FOOTER BOXES */
 .container > div {
-  background-color: rgb(187, 139, 76);
+  background-color: var(--main-color);
   padding: 1.5rem;
   border-radius: 12px;
 }
@@ -425,7 +436,7 @@ button:hover {
 }
 
 .socials img:hover {
-  background-color: rgba(96, 41, 9, 0.5);
+  background-color: var(--hover-colour);
   transform: scale(1.1);
 }
 
@@ -436,7 +447,7 @@ button:hover {
 .info a {
   display: inline-block;
   margin: 0.3rem 0;
-  color: #ded8d8;
+  color: white;
   text-decoration: none;
   list-style-type: none;
   font-size: 1.05rem;
@@ -449,7 +460,7 @@ button:hover {
 }
 
 .info a:hover {
-  color: #602909;
+  color: var(--hover-colour);
 }
 
 
@@ -484,7 +495,7 @@ SMALL DEVICES (Phones – up to 579px)
   }
 
   #logoimg {
-    max-width: 120px;
+    max-width: 40%;
     margin-bottom: 0.1rem;
   }
 

@@ -8,10 +8,12 @@ body {
 }
 
 :root {
-  --main-color: rgb(147, 76, 4);
+  --main-color: rgba(86, 42, 15);
   --main-font: "Lora", serif;
   --main-font-2: "Source Sans 3", sans-serif;
+  --hover-colour: rgb(140, 121, 104);
 }
+
 
 .grid-container {
   display: grid;
@@ -49,6 +51,7 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 50px;
+ 
 }
 
 /* =====================
@@ -76,7 +79,7 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(170, 90, 40);
+  background-color: var(--main-color);
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -94,7 +97,7 @@ nav {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #61360c;
+  color: var(--hover-colour);
 }
 
 /* Position and style the close button (top right corner) */
@@ -288,7 +291,7 @@ div.gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 80px solid beige;
+  border: 80px solid whitesmoke;
 }
 
 div.gallery-item {
@@ -361,7 +364,7 @@ div.gallery-item div.desc {
 /* Review section starts here, cake picture */
 #review-section {
   margin-bottom: 40px;
-  background-color: rgb(244, 192, 140);
+  background-color: whitesmoke
 }
 
 #review-section p {
@@ -437,7 +440,7 @@ div.gallery-item div.desc {
 ===================== */
 
 .footer{
-   background-color: rgb(187, 139, 76);
+   background-color: var(--main-color);
 }
 
 .container {
@@ -452,7 +455,7 @@ div.gallery-item div.desc {
 
 /* FOOTER BOXES */
 .container > div {
-  background-color: rgb(187, 139, 76);
+  background-color: var(--main-color);
   padding: 1.5rem;
   border-radius: 12px;
 }
@@ -521,7 +524,7 @@ div.gallery-item div.desc {
 .info a {
   display: inline-block;
   margin: 0.3rem 0;
-  color: #ded8d8;
+  color: white;
   text-decoration: none;
   list-style-type: none;
   font-size: 1.05rem;
@@ -534,7 +537,7 @@ div.gallery-item div.desc {
 }
 
 .info a:hover {
-  color: #602909;
+  color: var(--hover-colour);
 }
 
 
@@ -676,9 +679,8 @@ SMALL DEVICES (Phones – up to 579px)
     font-size: 2rem;
   }
 
-  #reviews img {
-    max-width: 120px;
-    height: auto;
+  .promo-area img{
+    max-width: 50%;
   }
 
   #p5 {
@@ -767,6 +769,19 @@ SMALL DEVICES (Phones – up to 579px)
     margin: 5px;
   }
 
+  
+  #review-section img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  #reviews img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  
+ 
   #review-section p {
     font-size: 1.8rem;
   }
@@ -809,6 +824,7 @@ LARGE DEVICES (Laptops – 769px to 1024px)
   }
 
   .content img {
+    display:block;
     max-width: 100%;
     height: auto;
   }
@@ -830,6 +846,12 @@ LARGE DEVICES (Laptops – 769px to 1024px)
   .container {
     grid-template-columns: repeat(3, 1fr);
     padding: 3.5rem 2.5rem;
+  }
+
+  
+  #review-section img {
+    max-width: 50%;
+    height: auto;
   }
 
   .footer-logo img {

@@ -9,9 +9,10 @@ body {
 }
 
 :root {
-  --main-color: rgb(147, 76, 4);
+  --main-color: rgba(86, 42, 15);
   --main-font: "Lora", serif;
   --main-font-2: "Source Sans 3", sans-serif;
+  --hover-colour: rgb(140, 121, 104);
 }
 
 .grid-container {
@@ -34,11 +35,6 @@ body {
   float: center;
   display: flex;
   flex-direction: row;
-}
-
-.header h1{
-  padding-top: 50px;
-  font-weight: 600;
 }
 
 .logo img{
@@ -80,7 +76,7 @@ Hamburger menue
   z-index: 1; 
   top: 0;
   left: 0;
-  background-color: rgb(170, 90, 40);
+  background-color: var(--main-color);
   overflow-x: hidden; 
   padding-top: 60px; 
   transition: 0.5s; 
@@ -98,7 +94,7 @@ Hamburger menue
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #61360c;
+  color:var(--hover-colour);
 }
 
 /* Position and style the close button (top right corner) */
@@ -126,7 +122,7 @@ ul.nav-options{
 }
 
 .nav-options li a:hover{
-color:#61360c
+color:var(--hover-colour)
 }
 
 
@@ -257,7 +253,7 @@ float:inline-start;
 
 
 .flex-container{
-  background-color: rgb(246, 227, 191);
+  background-color: burlywood;
     display:flex;
     flex-direction:row;
     font-size: 15px;
@@ -301,7 +297,7 @@ GALLERY ITEMS
 
 .gallery {
   grid-area: facts;
-  background-color: beige;
+  background-color: whitesmoke;
 }
 
 p{
@@ -361,7 +357,7 @@ div.gallery-item div.desc {
 ===================== */
 .footer{
 
-  background-color:rgb(187, 139, 76);
+  background-color: var(--main-color);
 }
 .container {
   grid-area: footer;
@@ -376,7 +372,7 @@ div.gallery-item div.desc {
 
 /* FOOTER BOXES */
 .container > div {
-  background-color: rgb(187, 139, 76);
+  background-color: var(--main-color);
   padding: 1.5rem;
   border-radius: 12px;
 }
@@ -431,7 +427,7 @@ div.gallery-item div.desc {
 }
 
 .socials img:hover {
-  background-color: rgba(96, 41, 9, 0.5);
+  background-color: var(--hover-colour);
   transform: scale(1.1);
 }
 
@@ -454,7 +450,7 @@ div.gallery-item div.desc {
 }
 
 .info a:hover {
-  color: #602909;
+  color: var(--hover-colour);
 
 }
 
@@ -494,8 +490,8 @@ MOBILE (≤ 499px)
   }
   
 
-  #logoimg {
-    max-width: 120px;
+  .logo img {
+    max-width: 40%;
     margin-bottom: 0.1rem;
   }
 
@@ -572,11 +568,15 @@ TABLETS (500px – 768px)
     text-align: center;
     padding: 1.5rem;
   }
-  
-
+ 
   h1 {
     font-size: 2.8rem;
   }
+
+  .logo img {
+    max-width: 30%;
+  } 
+
 
   /* NAVIGATION */
 
